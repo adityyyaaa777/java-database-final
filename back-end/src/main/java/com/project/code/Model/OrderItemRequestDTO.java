@@ -1,7 +1,7 @@
 package com.project.code.Model;
 
 
-public class PurchaseProductDTO {
+public class OrderItemRequestDTO {
     private Long id;
     private String name;
     private Double price;

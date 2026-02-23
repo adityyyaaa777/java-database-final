@@ -8,8 +8,8 @@ public class PlaceOrderRequestDTO {
     private String customerName;
     private String customerEmail;
     private String customerPhone;
-    private String datetime;
-    private List<PurchaseProductDTO> purchaseProduct;
+    private String date;
+    private List<OrderItemRequestDTO> purchaseProduct;
     private Double totalPrice;
 
     // Getters and Setters
@@ -30,35 +30,35 @@ public class PlaceOrderRequestDTO {
         this.customerName = customerName;
     }
 
-    public String getCustomerEmail() {
+    public String getEmail() {
         return customerEmail;
     }
 
-    public void setCustomerEmail(String customerEmail) {
+    public void setEmail(String customerEmail) {
         this.customerEmail = customerEmail;
     }
 
-    public String getCustomerPhone() {
+    public String getPhone() {
         return customerPhone;
     }
 
-    public void setCustomerPhone(String customerPhone) {
+    public void setPhone(String customerPhone) {
         this.customerPhone = customerPhone;
     }
 
-    public String getDatetime() {
-        return datetime;
+    public String getDate() {
+        return date;
     }
 
-    public void setDatetime(String datetime) {
-        this.datetime = datetime;
+    public void setDate(String date) {
+        this.date = date;
     }
 
-    public List<PurchaseProductDTO> getPurchaseProduct() {
+    public List<OrderItemRequestDTO> getItems() {
         return purchaseProduct;
     }
 
-    public void setPurchaseProduct(List<PurchaseProductDTO> purchaseProduct) {
+    public void setItems(List<OrderItemRequestDTO> purchaseProduct) {
         this.purchaseProduct = purchaseProduct;
     }
 
