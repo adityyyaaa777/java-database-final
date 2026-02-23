@@ -28,6 +28,11 @@ public class StoreController {
         return Map.of("message", "Store created successfully");
     }
 
+    @GetMapping
+    public Iterable<Store> getAllStores() {
+        return storeRepository.findAll();
+    }
+
     // 4️⃣ Validate Store
     @GetMapping("/validate/{storeId}")
     public boolean validateStore(@PathVariable Long storeId) {
