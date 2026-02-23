@@ -7,7 +7,7 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 import java.util.List;
 
 @Entity
-@Table(name = "customers")
+@Table(name = "customer")
 public class Customer {
 
     // 1. Primary Key

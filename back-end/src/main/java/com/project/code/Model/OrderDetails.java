@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Entity
-@Table(name = "orders")
+@Table(name = "order_details")
 public class OrderDetails {
 
     // 1. Primary Key
